@@ -1,207 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ejemplo de web estática publicada con GitHub Pages">
-  <title>Mi Web</title>
-  <style>
-    :root {
-      --primary: #2563eb;
-      --dark: #0f172a;
-      --light: #f8fafc;
-      --text: #334155;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: var(--light);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--dark);
-      color: white;
-      padding: 18px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 1.4rem;
-      font-weight: bold;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-    }
-
-    .hero {
-      min-height: 70vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 40px 20px;
-      background: linear-gradient(135deg, #eff6ff, #ffffff);
-    }
-
-    .hero h1 {
-      color: var(--dark);
-      font-size: clamp(2.2rem, 6vw, 4.5rem);
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      max-width: 650px;
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-
-    .button {
-      display: inline-block;
-      background: var(--primary);
-      color: white;
-      padding: 14px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 70px 20px;
-    }
-
-    h2 {
-      color: var(--dark);
-      margin-bottom: 20px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 5px 20px rgba(0,0,0,.08);
-    }
-
-    footer {
-      background: var(--dark);
-      color: white;
-      text-align: center;
-      padding: 25px;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      nav a {
-        margin: 0 8px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara María Marí Perdices</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-  <header>
-    <div class="logo">Mi Web</div>
-
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#contacto">Contacto</a>
+    <nav class="site-nav">
+        <a class="home-link" href="index.html?view=sara">Sara María Marí Perdices</a>
+        <div class="menu" aria-label="Navegación principal">
+            <a class="menu-button" href="index.html?view=work">Work</a>
+            <a class="menu-button" href="index.html?view=contact">Contacto</a>
+        </div>
     </nav>
-  </header>
 
-  <main>
+    <main>
+        <section class="content-panel statement" id="statement" aria-label="Presentación">
+            <p>Artista visual y plástica. Trabajo a partir de la relación directa con los materiales, las imágenes y el espacio que me rodea. Combino procesos manuales y digitales, trabajando principalmente con collage, estampación, pintura y fotografía.</p>
+            <p>Esta práctica se desarrolla de manera intuitiva, sin partir necesariamente de una imagen o resultado definido. A menudo parto de materiales y objetos encontrados, reciclados o procedentes de trabajos anteriores. Mi práctica se construye a través de la acumulación y la transformación, en este orden. A través de este proceso, recontextualizo el material, de modo que aparecen nuevas posibilidades y relaciones.</p>
+        </section>
 
-    <section class="hero" id="inicio">
-      <h1>Bienvenido a mi web</h1>
+        <section class="content-panel" id="work" aria-label="Proyectos">
+            <a href="momias.html">A las momias no las consumen los gusanos</a>
+            <a href="nina-con-coletas.html">Niña con coletas</a>
+            <a href="intro-al-collage.html">Intro al collage</a>
+            <a href="trapos-sucios.html">Trapos sucios</a>
+            <a href="ramas.html">Ramas</a>
+        </section>
 
-      <p>
-        Esta es una web estática creada con HTML y publicada gratuitamente
-        utilizando GitHub Pages.
-      </p>
+        <section class="content-panel" id="contact" aria-label="Contacto">
+            <a href="mailto:sara.m.mari@gmail.com">sara.m.mari@gmail.com</a>
+            <a href="https://www.instagram.com/sarapriincesa/" target="_blank" rel="noopener noreferrer">@sarapriincesa</a>
+        </section>
+    </main>
 
-      <a class="button" href="#sobre-mi">Descubrir más</a>
-    </section>
-
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-
-      <p>
-        Aquí puedes explicar quién eres, presentar tu proyecto, empresa o
-        actividad profesional.
-      </p>
-    </section>
-
-    <section id="servicios">
-      <h2>Servicios</h2>
-
-      <div class="cards">
-
-        <div class="card">
-          <h3>Servicio 1</h3>
-          <p>Describe aquí tu primer servicio o producto.</p>
-        </div>
-
-        <div class="card">
-          <h3>Servicio 2</h3>
-          <p>Describe aquí tu segundo servicio o producto.</p>
-        </div>
-
-        <div class="card">
-          <h3>Servicio 3</h3>
-          <p>Describe aquí tu tercer servicio o producto.</p>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-
-      <p>
-        Puedes añadir aquí tu correo electrónico, teléfono o enlaces a redes
-        sociales.
-      </p>
-
-      <br>
-
-      <a class="button" href="mailto:tuemail@ejemplo.com">
-        Contactar
-      </a>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>© 2026 Mi Web · Publicada con GitHub Pages</p>
-  </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,1066 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap');
+
+:root {
+    --hover-color: #EEF1E8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.15;
+    overflow-x: hidden;
+}
+
+.site-nav {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    text-align: right;
+    z-index: 10;
+}
+
+.home-link,
+.menu-button,
+.content-panel a {
+    color: inherit;
+    font: inherit;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.project-title {
+    color: inherit;
+    font: inherit;
+}
+
+.home-link,
+.menu-button {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.home-link {
+    margin-bottom: 12px;
+}
+
+.menu-button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.menu {
+    display: block;
+}
+
+.content-panel {
+    position: absolute;
+    top: 34vh;
+    left: 50%;
+    width: 420px;
+    transform: translateX(-50%);
+}
+
+#statement,
+#work,
+#contact {
+    display: none;
+}
+
+.statement p {
+    line-height: 1.3;
+}
+
+.statement p + p {
+    margin-top: 1em;
+}
+
+.content-panel a,
+.content-panel p {
+    display: block;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+#contact p {
+    margin-bottom: 6px;
+}
+
+.home-link:hover,
+.menu-button:hover,
+.content-panel a:hover {
+    color: var(--hover-color);
+}
+
+.project-page .project-title {
+    position: absolute;
+    top: calc(34vh + var(--title-offset, 0px));
+    left: 50%;
+    width: 420px;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+.project-content {
+    min-height: 100vh;
+    padding: 48vh 50px 50px;
+}
+
+.project-trapos .project-content {
+    padding-top: 45vh;
+}
+
+.project-collage .project-content {
+    padding-top: 52vh;
+}
+
+.project-ramas .project-content {
+    padding-top: 59vh;
+}
+
+.image-moodboard {
+    min-height: 30vh;
+}
+
+/* ---------- NIÑA CON COLETAS ---------- */
+
+.nina-board {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: clamp(18px, 3vw, 56px);
+    row-gap: clamp(130px, 18vw, 310px);
+    align-items: start;
+    padding-bottom: 18vw;
+}
+
+.nina-piece,
+.nina-piece img {
+    margin: 0;
+}
+
+.nina-piece img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.nina-opening {
+    grid-column: 1 / -1;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.nina-project-intro {
+    grid-column: 2 / span 10;
+    min-height: 12em;
+}
+
+.nina-project-text {
+    width: 100%;
+    line-height: 1.3;
+}
+
+.nina-project-text p + p {
+    margin-top: 1em;
+}
+
+.nina-project-text strong {
+    font-weight: 400;
+}
+
+.nina-ongoing {
+    font-size: 16px;
+}
+
+.nina-artist-book {
+    grid-column: 2 / span 10;
+}
+
+.nina-book-views {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(18px, 3vw, 56px);
+    align-items: end;
+}
+
+.nina-artist-book .series-info {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.nina-digital-collages {
+    grid-column: 1 / -1;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.nina-digital-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+}
+
+.nina-ephemeral-collages {
+    grid-column: 2 / span 10;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(18px, 3vw, 56px);
+    align-items: start;
+}
+
+.nina-edits {
+    grid-column: 2 / span 10;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(18px, 3vw, 56px);
+    align-items: start;
+}
+
+.nina-closing {
+    grid-column: 2 / span 5;
+}
+
+.nina-digital-centered {
+    grid-column: 4 / span 6;
+}
+
+.nina-process-panorama {
+    grid-column: 1 / -1;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.nina-process-panorama img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nina-print-views {
+    grid-column: 2 / span 10;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(18px, 3vw, 56px);
+    align-items: start;
+}
+
+.nina-process-row {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(8px, 1.4vw, 24px);
+    align-items: start;
+}
+
+.nina-final-work {
+    grid-column: 3 / span 8;
+}
+
+.nina-absolute-closing {
+    grid-column: 1 / -1;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.nina-absolute-closing img {
+    width: 100%;
+    height: auto;
+}
+
+.nina-sketchbook {
+    grid-column: 4 / span 6;
+    width: 84%;
+    justify-self: center;
+}
+
+.nina-last-study-one {
+    grid-column: 4 / span 6;
+    width: 100%;
+    justify-self: center;
+}
+
+.nina-last-study-two {
+    grid-column: 4 / span 6;
+    width: 82%;
+    justify-self: center;
+}
+
+.nina-last-composition {
+    grid-column: 3 / span 8;
+    width: 100%;
+    justify-self: center;
+}
+
+.nina-last-study figcaption,
+.nina-last-composition figcaption {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.nina-final-work figcaption {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.trapos-board {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: clamp(18px, 3vw, 56px);
+    row-gap: clamp(110px, 16vw, 260px);
+    align-items: start;
+    padding-bottom: 18vw;
+}
+
+.trapos-item {
+    margin: 0;
+}
+
+.trapos-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.trapos-project-text {
+    grid-column: 2 / span 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    aspect-ratio: 1003 / 1400;
+    line-height: 1.3;
+}
+
+.trapos-project-text p + p {
+    margin-top: 1em;
+}
+
+.print-group img,
+.diptych img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.print-series {
+    display: grid;
+    grid-column: 8 / span 5;
+    gap: 0;
+}
+
+.print-group {
+    display: grid;
+    gap: clamp(110px, 16vw, 260px);
+}
+
+.print-group figure,
+.diptych,
+.scan-series figure {
+    margin: 0;
+}
+
+.diptych-series {
+    display: grid;
+    grid-column: 2 / span 9;
+    gap: 0;
+}
+
+.diptych {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(10px, 1.5vw, 24px);
+}
+
+.series-info {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.scan-series {
+    grid-column: 1 / -1;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.scan-series figure {
+    margin: 0;
+}
+
+.scan-series img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ---------- INTRO AL COLLAGE ---------- */
+
+.collage-board {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: clamp(18px, 3vw, 56px);
+    row-gap: clamp(120px, 16vw, 280px);
+    align-items: start;
+    padding-bottom: 16vw;
+}
+
+.collage-piece,
+.collage-piece img,
+.collage-series figure {
+    margin: 0;
+}
+
+.collage-piece img,
+.collage-series img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.collage-piece figcaption,
+.collage-series .series-info {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.panorama-piece {
+    grid-column: 1 / -1;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.panorama-piece figcaption {
+    padding-left: 50px;
+}
+
+.pink-series { grid-column: 1 / span 10; }
+
+.pink-series-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.pink-series-images figure {
+    width: 28%;
+}
+
+.a3-piece { grid-column: 2 / span 5; }
+.tall-piece { grid-column: 7 / span 6; margin-top: 12vw; }
+
+.two-views {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    height: 38vw;
+    align-items: stretch;
+}
+
+.two-views img {
+    width: auto;
+    height: 100%;
+}
+
+.opening-pair {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, .78fr);
+    gap: clamp(18px, 3vw, 56px);
+    align-items: end;
+}
+
+.opening-pair .collage-piece {
+    margin: 0;
+}
+
+.canvas-piece,
+.red-piece {
+    grid-column: auto;
+    margin-top: 0;
+}
+.wall-series { grid-column: 1 / -1; }
+.sold-piece { grid-column: 8 / span 4; }
+.square-piece { grid-column: 1 / span 5; }
+.horizontal-piece { grid-column: 6 / span 7; margin-top: 10vw; }
+.small-formats { grid-column: 2 / span 7; }
+
+.full-bleed-piece {
+    grid-column: 1 / -1;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.full-bleed-piece figcaption {
+    padding-left: 50px;
+}
+
+/* ---------- RAMAS ---------- */
+
+.ramas-project-text {
+    position: absolute;
+    top: 220px;
+    left: 50px;
+    max-width: 420px;
+    line-height: 1.3;
+}
+
+.ramas-board {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(130px, 17vw, 290px);
+    padding-bottom: 16vw;
+}
+
+.ramas-piece {
+    margin: 0;
+}
+
+.ramas-piece img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.ramas-piece figcaption {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.ramas-full {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.ramas-paper-piece {
+    width: 46%;
+    margin-left: auto;
+}
+
+.ramas-wood-piece {
+    width: 72%;
+}
+
+/* ---------- MOMIAS ---------- */
+
+.project-momias .project-content {
+    padding-top: 52vh;
+}
+
+.momias-board {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: clamp(18px, 3vw, 56px);
+    row-gap: clamp(130px, 18vw, 310px);
+    align-items: start;
+    padding-bottom: 18vw;
+}
+
+.momias-piece,
+.momias-piece img {
+    margin: 0;
+}
+
+.momias-piece img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.momias-piece figcaption,
+.momias-typography-series .series-info {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.momias-a3-collage {
+    grid-column: 1 / -1;
+    width: min(420px, 42vw);
+    margin-top: -10vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.momias-star-group {
+    grid-column: 3 / span 7;
+}
+
+.momias-star-main {
+    width: 66%;
+}
+
+.momias-star-edit {
+    width: 100%;
+}
+
+.momias-edit-row {
+    display: grid;
+    grid-template-columns: 44% 1fr;
+    gap: clamp(18px, 3vw, 56px);
+    margin-top: 34px;
+    align-items: end;
+}
+
+.momias-project-text {
+    line-height: 1.3;
+}
+
+.momias-project-text p + p {
+    margin-top: 1em;
+    font-size: 16px;
+}
+
+.momias-cemetery {
+    grid-column: 2 / span 10;
+}
+
+.momias-green-row {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1.4fr .7fr;
+    gap: clamp(18px, 3vw, 56px);
+    width: 68%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: start;
+}
+
+.momias-small-work-row {
+    grid-column: 3 / span 8;
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: clamp(36px, 5vw, 86px);
+    align-items: end;
+}
+
+.momias-small-work-row figcaption {
+    min-height: 3.6em;
+}
+
+.momias-treasure {
+    grid-column: 1 / -1;
+    width: 100vw;
+    aspect-ratio: 3 / 2;
+    margin-left: calc(50% - 50vw);
+    overflow: hidden;
+}
+
+.momias-treasure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.momias-typography-series {
+    grid-column: 3 / span 8;
+}
+
+.momias-typography-images {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: clamp(18px, 3vw, 56px);
+    align-items: end;
+}
+
+.momias-process {
+    grid-column: 1 / -1;
+    width: 42%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.momias-loop-detail {
+    grid-column: 3 / span 3;
+}
+
+.project-momias { --title-offset: 0px; }
+.project-nina { --title-offset: 27px; }
+.project-collage { --title-offset: 54px; }
+.project-trapos { --title-offset: 81px; }
+.project-ramas { --title-offset: 108px; }
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    .site-nav {
+        top: 24px;
+        right: 24px;
+    }
+
+    .content-panel,
+    .project-page .project-title {
+        left: 24px;
+        width: calc(100% - 48px);
+        transform: none;
+    }
+
+    .project-content {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .nina-board {
+        display: block;
+        padding-bottom: 80px;
+    }
+
+    .nina-opening,
+    .nina-project-intro,
+    .nina-artist-book,
+    .nina-digital-collages,
+    .nina-ephemeral-collages,
+    .nina-edits,
+    .nina-closing,
+    .nina-digital-centered,
+    .nina-process-panorama,
+    .nina-print-views,
+    .nina-process-row,
+    .nina-final-work,
+    .nina-sketchbook,
+    .nina-last-study,
+    .nina-last-composition {
+        margin-bottom: 110px;
+    }
+
+    .nina-project-intro {
+        min-height: 10em;
+    }
+
+    .nina-book-views {
+        gap: 10px;
+    }
+
+    .nina-digital-collages {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+    }
+
+    .nina-ephemeral-collages {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .nina-ephemeral-collages .nina-piece {
+        margin: 0;
+    }
+
+    .nina-edits {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .nina-edits .nina-piece {
+        margin: 0;
+    }
+
+    .nina-closing {
+        width: calc(50% - 5px);
+    }
+
+    .nina-digital-centered {
+        width: 72%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .nina-process-panorama {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+    }
+
+    .nina-print-views {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .nina-process-row {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 6px;
+    }
+
+    .nina-final-work {
+        width: 78%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .nina-sketchbook {
+        width: 72%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .nina-last-study {
+        width: 72%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .nina-last-study-one {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .nina-last-study-two {
+        width: 64%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .nina-last-composition {
+        width: 100%;
+    }
+
+    .nina-absolute-closing {
+        width: 100vw;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: calc(50% - 50vw);
+    }
+
+    .trapos-board {
+        display: block;
+        padding-bottom: 80px;
+    }
+
+    .collage-board {
+        display: block;
+        padding-bottom: 80px;
+    }
+
+    .collage-piece,
+    .collage-series {
+        margin: 0 0 110px;
+    }
+
+    .opening-pair {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 110px;
+        margin-bottom: 110px;
+    }
+
+    .opening-pair .collage-piece {
+        margin: 0;
+    }
+
+    .opening-pair .red-piece {
+        width: 78%;
+    }
+
+    .pink-series-images {
+        display: flex;
+        gap: 72px;
+    }
+
+    .pink-series-images figure,
+    .pink-series-images figure:nth-child(n) {
+        width: 58%;
+        margin: 0;
+    }
+
+    .two-views {
+        height: 72vw;
+    }
+
+    .panorama-piece {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+    }
+
+    .panorama-piece figcaption {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .sold-piece {
+        width: 68%;
+        margin-left: auto;
+    }
+
+    .full-bleed-piece {
+        width: 100vw;
+        margin-right: 0;
+        margin-left: calc(50% - 50vw);
+    }
+
+    .full-bleed-piece figcaption {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .ramas-board {
+        gap: 110px;
+        padding-bottom: 80px;
+    }
+
+    .ramas-project-text {
+        top: 190px;
+        left: 24px;
+        max-width: calc(100% - 48px);
+    }
+
+    .ramas-full {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+    }
+
+    .ramas-paper-piece {
+        width: 72%;
+        margin-left: auto;
+    }
+
+    .ramas-wood-piece {
+        width: 92%;
+    }
+
+    .momias-board {
+        display: block;
+        padding-bottom: 80px;
+    }
+
+    .momias-piece,
+    .momias-star-group,
+    .momias-green-row,
+    .momias-small-work-row,
+    .momias-typography-series {
+        margin: 0 0 110px;
+    }
+
+    .momias-a3-collage {
+        width: 68%;
+        margin-top: -8vh;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .momias-star-main {
+        width: 72%;
+        margin-bottom: 0;
+    }
+
+    .momias-star-edit {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .momias-edit-row {
+        grid-template-columns: 48% 1fr;
+        gap: 14px;
+        margin-top: 26px;
+        align-items: end;
+    }
+
+    .momias-project-text {
+        font-size: 16px;
+    }
+
+    .momias-cemetery {
+        width: 94%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .momias-green-row {
+        display: grid;
+        grid-template-columns: 1.4fr .7fr;
+        gap: 14px;
+        width: 100%;
+        align-items: start;
+    }
+
+    .momias-green-row .momias-piece,
+    .momias-small-work-row .momias-piece,
+    .momias-typography-images .momias-piece {
+        margin: 0;
+    }
+
+    .momias-small-work-row {
+        display: grid;
+        grid-template-columns: 1.25fr 1fr;
+        gap: 24px;
+        align-items: end;
+    }
+
+    .momias-treasure {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+    }
+
+    .momias-typography-images {
+        grid-template-columns: 1.6fr 1fr;
+        gap: 14px;
+    }
+
+    .momias-process {
+        width: 68%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .momias-loop-detail {
+        width: 46%;
+        margin-left: 12%;
+    }
+
+    .trapos-item {
+        margin-bottom: 96px;
+    }
+
+    .trapos-project-text {
+        display: block;
+        aspect-ratio: auto;
+        margin-top: 96px;
+        margin-bottom: 110px;
+    }
+
+    .print-series,
+    .diptych-series {
+        display: block;
+    }
+
+    .print-group {
+        gap: 96px;
+    }
+
+    .print-series .series-info,
+    .diptych-series .series-info {
+        margin-top: 14px;
+    }
+
+    .diptych {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
