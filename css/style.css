@@ -32,6 +32,30 @@ body {
     z-index: 10;
 }
 
+.language-nav {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+}
+
+.language-button {
+    appearance: none;
+    padding: 0;
+    color: inherit;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+    transition: color .2s ease;
+}
+
+.language-button.is-active {
+    font-weight: 400;
+}
+
 .home-link,
 .menu-button,
 .content-panel a {
@@ -102,7 +126,15 @@ body {
 
 .home-link:hover,
 .menu-button:hover,
-.content-panel a:hover {
+#work a:hover,
+.language-button:hover {
+    color: var(--hover-color);
+}
+
+.home-link:active,
+.menu-button:active,
+#work a:active,
+.language-button:active {
     color: var(--hover-color);
 }
 
@@ -387,7 +419,7 @@ body {
 .diptych {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: clamp(10px, 1.5vw, 24px);
+    gap: clamp(14px, 1.6vw, 26px);
 }
 
 .series-info {
@@ -697,10 +729,9 @@ body {
 }
 
 .project-momias { --title-offset: 0px; }
-.project-nina { --title-offset: 27px; }
-.project-collage { --title-offset: 54px; }
-.project-trapos { --title-offset: 81px; }
-.project-ramas { --title-offset: 108px; }
+.project-collage { --title-offset: calc(1.15em + 4px); }
+.project-trapos { --title-offset: calc(2.3em + 8px); }
+.project-ramas { --title-offset: calc(3.45em + 12px); }
 
 @media (max-width: 600px) {
     body {
@@ -710,6 +741,12 @@ body {
     .site-nav {
         top: 24px;
         right: 24px;
+    }
+
+    .language-nav {
+        top: 24px;
+        left: 24px;
+        gap: 6px;
     }
 
     .content-panel,
@@ -1062,5 +1099,6 @@ body {
     .diptych {
         display: grid;
         grid-template-columns: 1fr;
+        gap: 18px;
     }
 }
