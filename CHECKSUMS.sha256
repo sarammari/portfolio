@@ -1,7 +1,7 @@
 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b  ./.nojekyll
-19bc2492f70f14e71003f011f8a3c37e8ae926b9cf946efc7fb7731697dd080a  ./ASSET_NOTES.md
+bf31afdf614f91c9b4c5f7f1a6749ac5377efa35153004645ba823b16404c063  ./ASSET_NOTES.md
 dc731d0c399b53df885e4d656f60e467dfde1ca180d2d1d5fac718212f09035e  ./CNAME
-f83fb1100641a9542d4e65da45d980d9d79d7c72e1719ed5645e9df53874e4fc  ./README.md
+d0cbb429b94a126dbd41fe8ff5bb0311268b99de8d2650436a7d5b440c84cac3  ./README.md
 ebeff12327353a2351397ae443fa1d2af5f8535025494031a2d387cf0255aa74  ./assets/images/intro-al-collage/acrilico-papel-160x100-2024.jpg
 286eb4f7a9526af314131ee0cae4a26927ab7f7f1c527b763f4a4e50fc28a2e3  ./assets/images/intro-al-collage/acrilico-papel-carton-45x180-2025.jpg
 b90dd8d797032e732e6362c5c1fbd5dc1b566096b9150671abce37652aaf0cbc  ./assets/images/intro-al-collage/acrilico-papel-carton-50x70-2025.jpg
@@ -59,6 +59,7 @@ d298d99d42b5384f330302ee845f4129cfd97f55b0dc31ba762ce739bccbc0c7  ./assets/image
 a77b3ae148f69477caf55d646293e6897f964fb26ed78087b67c4ef5f61e2a76  ./assets/images/ramas/papel-carton-35x150-2025.jpg
 a05d88c76dd4977e94e4a427b9317895627801b2678b3d2749e68b4445bbdbbf  ./assets/images/ramas/ramas-01-ambiente.jpg
 2a1b5a2db9ca786e39baad0fac5a475cd64e7718993554f12b690455265650a2  ./assets/images/ramas/ramas-02-ambiente.jpg
+eb3bf7f1297555761124ff792ab062f0bf52f178ca18fd6e55a328084d6982e4  ./assets/images/ramas/ramas-02-ambiente-editada.png
 84f8e02f739157e0b7a3034919d338d074e47cff1e6add50a90c8f66c3ae74d4  ./assets/images/trapos-sucios/diptico-01.jpg
 397a8a277520b22d3a9d21f9970e0661ba0261b71c18f920aef68ef3a0218b72  ./assets/images/trapos-sucios/diptico-02.jpg
 041cd08689eb675f6ab7c067751f7c96ec918557e4fcaac454d036be98fa3fc6  ./assets/images/trapos-sucios/serigrafia-01-vertical.png
@@ -66,11 +67,11 @@ a05d88c76dd4977e94e4a427b9317895627801b2678b3d2749e68b4445bbdbbf  ./assets/image
 cb4a4c1daefc6754b2a96bc6db9585f2cb23dfa5aac1874e906f85b35a471204  ./assets/images/trapos-sucios/serigrafia-03-vertical.png
 a64a64f93fa1a77a784fdf53d242cbebd4a4725847301d7dfb83f7a9e8d96edb  ./assets/images/trapos-sucios/serigrafia-04-vertical.png
 8a0460197c3511509b7238c429b95b24bd01fcd740b62f9d258afc1ca9e61294  ./assets/images/trapos-sucios/serigrafia-05-vertical.png
-5bf9fd92bd2eb98c87f98ea988b73becc62875febaed48e7767d56558ec5d741  ./css/style.css
-e8315f4e1e2ae69dce233ee6d2c107aab113d8195266a2aa47b928d766bff305  ./index.html
-e5b22cea6e84c7bc0f5558b4cf9ba8767885a03727e6039ad95273c88a5c60f1  ./intro-al-collage.html
-5f2369e68584f5a04a23ec6d7407f268e2796651192e134cf530a009406f79ba  ./js/script.js
-4c7a4cd8517a6e280991e7975825f3625717d28bad2bb79befde43059ce12964  ./momias.html
-cdec1dbf6e98b671f766bd8d32683b92bebfb14ea7c9dbca477237d56efb958b  ./nina-con-coletas.html
-09503775016fe20a8b4234bce222f7ac6a8d39dbf6e6a8de29cf7473604236cd  ./ramas.html
-f0e0bbb78de24c1fcd871a8a8bdab625ca38cdbe930a044df338df8eb58e6b93  ./trapos-sucios.html
+431c476e631399f3b7ea5a553cc921beaeb9e5d54aacd43ff2a00bfcadb977f8  ./css/style.css
+6e46f81ff7f12f79d89eaceb269c07fe5e5bf458ad3116e90d24ca86d5908b2f  ./index.html
+f522186e6f7e32562300d4dd45bfea9e253dad9caf9b481d3f9c32dba2aa5c71  ./intro-al-collage.html
+99df2ba8b1430231079c954c10237e185d55e952257ab1f963018c7cdca71afd  ./js/script.js
+c3372f1313a80fcf0ace835f12eb4f7c1aeeb8a086a2baf9be9e4ccdefd108b9  ./momias.html
+75b4414546ee8bf9af14280dc6cef6f0fbb740cd9c8bfb627fae5f61da7d7e5c  ./nina-con-coletas.html
+2f4edf0b93c1110a7c5d6489ddae74e693f741f17fec34d160e7f4bebf547786  ./ramas.html
+7019191a21f24f08f5bd375affd9966cba0e0addf50250e81f2814e458f15043  ./trapos-sucios.html

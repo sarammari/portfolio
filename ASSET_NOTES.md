@@ -22,5 +22,6 @@ Este paquete conserva las versiones finales que utiliza la web. Los originales n
 ## Intro al collage, Trapos sucios y Ramas
 
 - Se incluyen únicamente las versiones finales utilizadas por sus páginas.
+- `ramas/ramas-02-ambiente-editada.png`: versión con luz, balance de blancos, color y claridad ajustados para la web; el archivo original `ramas-02-ambiente.jpg` se conserva sin modificar.
 - Las fotografías de escáner retiradas de «Trapos sucios» no están incluidas en este paquete.
 - Las conversiones desde HEIC se guardan como JPEG para asegurar compatibilidad con navegadores y GitHub Pages.

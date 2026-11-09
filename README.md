@@ -16,7 +16,7 @@ El archivo `CNAME` conserva la conexión existente con `saramariamariperdices.co
 - `index.html`: statement, proyectos y contacto.
 - Cinco páginas de proyecto: Momias, Niña con coletas, Intro al collage, Trapos sucios y Ramas.
 - `css/style.css`: maquetación completa y adaptación móvil.
-- `js/script.js`: navegación de la portada.
+- `js/script.js`: navegación de la portada y selector de idioma ES/CA/EN.
 - `assets/images/`: únicamente las imágenes actualmente utilizadas por la web.
 
 La relación de imágenes derivadas o editadas está documentada en `ASSET_NOTES.md`.
